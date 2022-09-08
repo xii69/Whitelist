@@ -1,5 +1,8 @@
 name: Whitelist
-version: '${project.version}'
+version: 1.0.0
 main: me.xii69.whitelist.Main
-authors: [ xii69 ]
+author: xii69
 description: Simple and fast whitelist plugin
+commands:
+  wl:
+  whitelist:
