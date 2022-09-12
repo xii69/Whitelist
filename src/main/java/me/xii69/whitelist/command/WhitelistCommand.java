@@ -16,6 +16,11 @@ public class WhitelistCommand implements CommandExecutor {
             return true;
         }
 
+        if (!sender.hasPermission("whitelist.admin")) {
+            sender.sendMessage(Utils.colorize("&cYou don't have permission"));
+            return true;
+        }
+
         switch (args[0]) {
             case "on":
                 if (!Main.getStatus()) {
